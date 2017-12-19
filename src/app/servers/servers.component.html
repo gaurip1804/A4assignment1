@@ -1,0 +1,24 @@
+<button class="btn btn-primary" [disabled] = "!enableButton">Button Demo</button>
+{{'Button will enable after 4 secs' }}
+<p [innerText] = "enableButton"></p>{{'  This is property binding. '}} <br>
+
+servers works! {{ 'You' }} can inspect this {{ componentname }}- this is {{ componentnumber }}nd {{ getComponentType() }}
+<app-warning-alert></app-warning-alert>
+<p>{{enableButton}} {{ ':this is String interpolation' }}</p>
+
+<button class="btn btn-primary" (click) = "onChangeTextButtonclick()">Button1 click Demo</button>
+<p [innerText] = "changedText"></p>
+
+<!--<input type="text" (input)="onkeypress($event)">-->
+
+<p [innerText] = "inputData">{{ 'Here you have default text, before input type' }}</p>
+
+<input type="text" [(ngModel)] = "inputData">
+
+
+<p *ngIf="textFlag">{{ inputData }}</p>
+
+<p [ngStyle]="{background: getColor()}"  [ngClass]="{online : textStatus == 'online'}">Demonstrating ngStyle</p>
+
+
+<!--<app-assignment2></app-assignment2>-->
