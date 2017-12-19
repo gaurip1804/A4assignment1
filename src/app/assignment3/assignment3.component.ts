@@ -18,12 +18,15 @@ export class Assignment3Component implements OnInit {
   i = 0;
   logArr = [];
   bgcolour = 'white'; colourflag = 'white';
+  timestampArr= [];
 
   getPara(){
     this.i++;
     this.logArr.push(this.i);
     this.colourflag = this.i > 5 ? 'blue' : 'white';
+    this.timestampArr.push(new Date());
     return this.displayparagh = this.i % 2 === 0 ? 'hidden' : 'visible';
+
   }
 
   // setColour()

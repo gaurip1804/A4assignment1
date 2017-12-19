@@ -8,6 +8,11 @@
 
 <!--<p *ngIf="false"> Paragraph of my choice</p>-->
 
-<div *ngFor="let log1 of logArr" [ngStyle]="{background: log1 > 5 ? 'blue': 'white'}" [ngClass]="{vip:log1 > 5 ? true: false}">
+<!--<div *ngFor="let log1 of logArr" [ngStyle]="{background: log1 > 5 ? 'blue': 'white'}" [ngClass]="{vip:log1 > 5 ? true: false}">-->
+  <!--{{ log1 }}-->
+<!--</div>-->
+
+
+<div *ngFor="let log1 of timestampArr; let index=index" [ngStyle]="{background: index >= 4 ? 'blue': 'white'}" [ngClass]="{vip:index >= 4 ? true: false}">
   {{ log1 }}
 </div>
