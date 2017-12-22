@@ -30,4 +30,5 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 Assignments are created as components
 Assignment 3 contains concepts related to property binding, string interpolation, using directives like ngIf and ngFor, implementing ngClass and ngStyle. Click event.
+Accessing elements through index - ngFor
 
